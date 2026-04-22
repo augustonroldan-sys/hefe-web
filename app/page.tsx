@@ -339,28 +339,26 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6 items-center">
             {[
-              { src: "/cl-maffeti.png", alt: "Maffeti Burger" },
-              { src: "/cl-howard-johnson.png", alt: "Howard Johnson San Pedro" },
-              { src: "/cl-cip.png", alt: "CIP Centro de Imágenes del Paraná" },
-              { src: "/cl-ministerio.png", alt: "Ministerio de Desarrollo Agrario" },
-              { src: "/cl-spa.png", alt: "San Pedro Alarmas" },
-              { src: "/cl-inta.png", alt: "INTA" },
-              { src: "/cl-dismarket.png", alt: "DisMarket S.A." },
-              { src: "/cl-municipio.png", alt: "San Pedro Municipio" },
-              { src: "/cl-sancor.png", alt: "SanCor Salud" },
-              { src: "/cl-quiropraxia.png", alt: "Quiropraxia San Pedro" },
-              { src: "/cl-creando-conciencia.png", alt: "Creando Conciencia" },
-              { src: "/cl-sindicato.png", alt: "Sindicato de Luz y Fuerza" },
-              { src: "/cl-lo-de-coco.png", alt: "Lo de Coco Maderas" },
-              { src: "/cl-menisale.png", alt: "Menisale" },
-              { src: "/cl-morresi.png", alt: "Morresi Fruit" },
-              { src: "/cl-oilher.png", alt: "Agronegocios Oilher" },
-              { src: "/cl-ferreteria.png", alt: "La Ferretería del Barrio" },
-              { src: "/cl-solieri.png", alt: "Carnicerías Solieri" },
-              { src: "/cl-la-chacra.png", alt: "La Chacra Spa de Campo" },
-              { src: "/cl-jg.png", alt: "J&G S.R.L." },
-              { src: "/cl-quefi.png", alt: "Quefi S.R.L." },
-              { src: "/cl-la-paulina.png", alt: "La Paulina" },
+              { src: "/cl-maffeti.jpeg", alt: "Maffeti Burger" },
+              { src: "/cl-howard-johnson.jpeg", alt: "Howard Johnson San Pedro" },
+              { src: "/cl-cip.jpeg", alt: "CIP Centro de Imágenes del Paraná" },
+              { src: "/cl-ministerio.jpeg", alt: "Ministerio de Desarrollo Agrario" },
+              { src: "/cl-spa.jpeg", alt: "San Pedro Alarmas" },
+              { src: "/cl-inta.jpeg", alt: "INTA" },
+              { src: "/cl-dismarket.jpeg", alt: "DisMarket S.A." },
+              { src: "/cl-municipio.jpeg", alt: "San Pedro Municipio" },
+              { src: "/cl-sancor.jpeg", alt: "SanCor Salud" },
+              { src: "/cl-quiropraxia.jpeg", alt: "Quiropraxia San Pedro" },
+              { src: "/cl-creando-conciencia.jpeg", alt: "Creando Conciencia" },
+              { src: "/cl-sindicato.jpeg", alt: "Sindicato de Luz y Fuerza" },
+              { src: "/cl-lo-de-coco.jpeg", alt: "Lo de Coco Maderas" },
+              { src: "/cl-menisale.jpeg", alt: "Menisale" },
+              { src: "/cl-morresi.jpeg", alt: "Morresi Fruit" },
+              { src: "/cl-oilher.jpeg", alt: "Agronegocios Oilher" },
+              { src: "/cl-ferreteria.jpeg", alt: "La Ferretería del Barrio" },
+              { src: "/cl-solieri.jpeg", alt: "Carnicerías Solieri" },
+              { src: "/cl-la-chacra.jpeg", alt: "La Chacra Spa de Campo" },
+              { src: "/cl-jg-quefi-paulina.jpeg", alt: "J&G / Quefi / La Paulina" },
             ].map((c) => (
               <div
                 key={c.alt}
@@ -377,7 +375,7 @@ export default function Home() {
             ))}
           </div>
           <p className="text-center text-gray-400 text-sm mt-10">
-            +20 empresas e instituciones de San Pedro y la región
+            +20 empresas, instituciones y negocios de San Pedro y la región
           </p>
         </div>
       </section>
