@@ -88,6 +88,8 @@ export default function Home() {
           <div className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-600">
             <a href="#rubros" className="hover:text-[#2e785f] transition-colors">Rubros</a>
             <a href="#productos" className="hover:text-[#2e785f] transition-colors">Productos</a>
+            <a href="#merch" className="hover:text-[#2e785f] transition-colors">Merch</a>
+            <a href="#hoteleria" className="hover:text-[#2e785f] transition-colors">Hotelería</a>
             <a href="#contacto" className="hover:text-[#2e785f] transition-colors">Contacto</a>
             <a
               href="https://www.instagram.com/hefeuniformes/"
@@ -276,6 +278,148 @@ export default function Home() {
                 <p className="text-gray-500 text-sm leading-relaxed">{p.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* MERCH & REGALOS EMPRESARIALES */}
+      <section id="merch" className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12">
+            <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-4" style={{ backgroundColor: "#e8f4f0", color: "#2e785f" }}>
+              🎁 Nuevo
+            </span>
+            <h2 className="text-3xl md:text-4xl font-black text-gray-800 mb-3">
+              Merch & <span style={{ color: "#2e785f" }}>Regalos Empresariales</span>
+            </h2>
+            <p className="text-gray-500 text-lg max-w-xl mx-auto">
+              Termos, tazas, bolsas y artículos personalizados con el logo de tu empresa. Ideal para obsequios corporativos, eventos y fidelización de clientes.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
+            <div className="grid grid-cols-2 gap-3">
+              <img
+                src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=500&q=80"
+                alt="Termos personalizados"
+                className="rounded-2xl object-cover w-full h-48 shadow-md"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&q=80"
+                alt="Regalos empresariales"
+                className="rounded-2xl object-cover w-full h-48 shadow-md mt-6"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=500&q=80"
+                alt="Merchandising corporativo"
+                className="rounded-2xl object-cover w-full h-48 shadow-md"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=500&q=80"
+                alt="Bolsas personalizadas"
+                className="rounded-2xl object-cover w-full h-48 shadow-md mt-6"
+              />
+            </div>
+            <div className="flex flex-col gap-5">
+              {[
+                { icon: "☕", titulo: "Termos & Tazas", desc: "Termos Stanley, tazas y vasos térmicos con tu logo bordado o grabado. Ideales para regalo corporativo." },
+                { icon: "👜", titulo: "Bolsas & Tote bags", desc: "Bolsas de tela y tote bags personalizadas. Útiles, sustentables y con mucha visibilidad de marca." },
+                { icon: "🎁", titulo: "Kits empresariales", desc: "Armamos kits completos para tus clientes o empleados: termo + remera + bolsa + accesorios con tu marca." },
+                { icon: "🏆", titulo: "Eventos & Lanzamientos", desc: "Merchandising especial para eventos, ferias, lanzamientos de productos o aniversarios de empresa." },
+              ].map((item) => (
+                <div key={item.titulo} className="flex gap-4 items-start">
+                  <div
+                    className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl flex-shrink-0"
+                    style={{ backgroundColor: "#e8f4f0" }}
+                  >
+                    {item.icon}
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-800 mb-1">{item.titulo}</h3>
+                    <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+              <a
+                href={waLink("Hola! Me interesa merch y regalos empresariales. ¿Pueden darme un presupuesto?")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 flex items-center justify-center gap-2 px-8 py-4 rounded-full text-white font-bold text-base transition-all hover:opacity-90 active:scale-95"
+                style={{ backgroundColor: "#2e785f" }}
+              >
+                Consultar presupuesto de merch →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* HOTELERÍA */}
+      <section id="hoteleria" className="py-20" style={{ backgroundColor: "#f8fffe" }}>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-black text-gray-800 mb-3">
+              Uniformes para <span style={{ color: "#2e785f" }}>Hotelería</span>
+            </h2>
+            <p className="text-gray-500 text-lg max-w-xl mx-auto">
+              Recepción, housekeeping, gastronomía hotelera y spa. Uniformes impecables que reflejan la calidad de tu establecimiento.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <div className="columns-2 gap-3 space-y-3">
+              {[
+                "/trabajos/Hoteleria/hotel-1.jpeg",
+                "/trabajos/Hoteleria/hotel-2.jpeg",
+                "/trabajos/Hoteleria/hotel-3.jpeg",
+              ].map((src, i) => (
+                <div key={i} className="break-inside-avoid rounded-xl overflow-hidden shadow-md">
+                  <img
+                    src={src}
+                    alt={`Hotelería HeFe ${i + 1}`}
+                    className="w-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              ))}
+            </div>
+            <div>
+              <div className="grid grid-cols-1 gap-4 mb-8">
+                {[
+                  { icon: "🛎️", area: "Recepción & Conserjería", desc: "Uniforme elegante y profesional para la primera impresión que tu hotel necesita." },
+                  { icon: "🛏️", area: "Housekeeping", desc: "Ropa cómoda y funcional para el equipo de limpieza y mantenimiento." },
+                  { icon: "🍽️", area: "Restaurante & Bar", desc: "Uniformes para mozos, bartenders y cocina del restaurante del hotel." },
+                  { icon: "💆", area: "Spa & Bienestar", desc: "Indumentaria suave y profesional para masajistas y esteticistas." },
+                ].map((item) => (
+                  <div
+                    key={item.area}
+                    className="flex gap-4 items-start p-4 rounded-xl border border-gray-100 bg-white shadow-sm"
+                  >
+                    <span className="text-2xl">{item.icon}</span>
+                    <div>
+                      <h3 className="font-bold text-gray-800 mb-0.5">{item.area}</h3>
+                      <p className="text-sm text-gray-500">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div
+                className="rounded-2xl p-5 flex items-start gap-3"
+                style={{ backgroundColor: "#e8f4f0" }}
+              >
+                <span className="text-2xl">🏨</span>
+                <div>
+                  <p className="font-semibold text-gray-800 text-sm mb-1">Cliente destacado: Howard Johnson San Pedro</p>
+                  <p className="text-sm text-gray-600">Vistiendo al equipo del Howard Johnson desde hace años con uniformes corporativos para todas las áreas del hotel.</p>
+                </div>
+              </div>
+              <a
+                href={waLink("Hola! Me interesa uniformes para hotelería. ¿Pueden darme un presupuesto?")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 flex items-center justify-center gap-2 px-8 py-4 rounded-full text-white font-bold text-base transition-all hover:opacity-90 active:scale-95 w-full"
+                style={{ backgroundColor: "#2e785f" }}
+              >
+                Pedir presupuesto hotelería →
+              </a>
+            </div>
           </div>
         </div>
       </section>
