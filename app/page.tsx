@@ -36,7 +36,7 @@ const rubros = [
     icon: "💇",
     nombre: "Estética & Merch",
     desc: "Uniformes para peluquerías, salones de belleza y merch personalizado. Estilo y marca en cada prenda.",
-    img: "https://images.unsplash.com/photo-1560066984-138daaa2596b?w=600&q=80",
+    img: "https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&q=80",
   },
   {
     icon: "🏨",
